@@ -1,0 +1,140 @@
+{
+  "menu": [
+    {
+      "route": "dashboard",
+      "name": "Inicio BI",
+      "type": "link",
+      "icon": "dashboard"
+    },
+    {
+      "route": "propiedades/inventario",
+      "name": "Inventario",
+      "type": "link",
+      "icon": "storage"
+    },
+    {
+      "route": "altas/add",
+      "name": "Gestión de Altas",
+      "type": "link",
+      "icon": "add_circle"
+    },
+    {
+      "route": "bajas/add",
+      "name": "Gestión de Bajas",
+      "type": "link",
+      "icon": "remove_circle"
+    },
+    {
+      "route": "visitas",
+      "name": "Visitas",
+      "type": "sub",
+      "icon": "people",
+      "children": [
+        {
+          "route": "colors",
+          "name": "Planeación",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Retroalimentación",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "only": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
+    },
+    {
+      "route": "arrendamientos",
+      "name": "Arrendamientos",
+      "type": "sub",
+      "icon": "store",
+      "children": [
+        {
+          "route": "colors",
+          "name": "Arrendamientos",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Mantenimiento",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Ingresos",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "only": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
+    },
+    {
+      "route": "inventario",
+      "name": "Invasiones",
+      "type": "link",
+      "icon": "warning"
+    },
+    {
+      "route": "design",
+      "name": "Utilerías",
+      "type": "sub",
+      "icon": "build",
+      "children": [
+        {
+          "route": "colors",
+          "name": "Consulta Avanzada",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Reportes",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Carga de Datos",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "only": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
+    },
+    {
+      "route": "design",
+      "name": "Configuración",
+      "type": "sub",
+      "icon": "settings",
+      "children": [
+        {
+          "route": "colors",
+          "name": "Usuarios",
+          "type": "link"
+        },
+        {
+          "route": "icons",
+          "name": "Permisos",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "only": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
+    }
+  ]
+}

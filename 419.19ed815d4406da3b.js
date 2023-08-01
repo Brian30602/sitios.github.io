@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkng_matero=self.webpackChunkng_matero||[]).push([[419],{4419:(i,n,a)=>{a.r(n),a.d(n,{VisitasModule:()=>u});var t=a(6814),o=a(5879);let u=(()=>{class s{}return s.\u0275fac=function(e){return new(e||s)},s.\u0275mod=o.oAB({type:s}),s.\u0275inj=o.cJS({imports:[t.ez]}),s})()}}]);
