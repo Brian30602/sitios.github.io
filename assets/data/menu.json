@@ -13,7 +13,7 @@
       "icon": "storage"
     },
     {
-      "route": "altas/add",
+      "route": "altas/new",
       "name": "Gestión de altas",
       "type": "link",
       "icon": "add_circle"
