@@ -2,7 +2,7 @@
   "menu": [
     {
       "route": "dashboard",
-      "name": "Inicio BI",
+      "name": "Inicio",
       "type": "link",
       "icon": "dashboard"
     },
@@ -14,13 +14,13 @@
     },
     {
       "route": "altas/add",
-      "name": "Gestión de Altas",
+      "name": "Gestión de altas",
       "type": "link",
       "icon": "add_circle"
     },
     {
       "route": "bajas/add",
-      "name": "Gestión de Bajas",
+      "name": "Gestión de bajas",
       "type": "link",
       "icon": "remove_circle"
     },
@@ -78,10 +78,30 @@
       }
     },
     {
-      "route": "inventario",
-      "name": "Invasiones",
-      "type": "link",
-      "icon": "warning"
+      "route": "design",
+      "name": "Jurídico",
+      "type": "sub",
+      "icon": "gavel",
+      "children": [
+        {
+          "route": "colors",
+          "name": "Restitución",
+          "icon": "gavel",
+          "type": "link"
+        },
+        {
+          "route": "colors",
+          "name": "Invasiones",
+          "icon": "gavel",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "only": [
+          "ADMIN",
+          "MANAGER"
+        ]
+      }
     },
     {
       "route": "design",
@@ -91,7 +111,7 @@
       "children": [
         {
           "route": "colors",
-          "name": "Consulta Avanzada",
+          "name": "Consulta avanzada",
           "type": "link"
         },
         {
@@ -101,7 +121,7 @@
         },
         {
           "route": "icons",
-          "name": "Carga de Datos",
+          "name": "Carga de datos",
           "type": "link"
         }
       ],
